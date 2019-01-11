@@ -1,0 +1,264 @@
+/**
+** Material Dark Theme
+**/
+
+:root {
+    --darkBG: #1e1e1e;
+    --medBG: #252526;
+      --lightBG: #383b3d;
+    --text: #d4d4d4;
+    --titles: #bbbbbb;
+    --menufg: #cccccc;
+    --inactive: #3a3d41;
+    --highlightbg: #add6ff26;
+    --accent:#007acc;
+  }
+  input:active,input:focus, div:focus{
+      border-color: var(--accent) !important;
+      border-radius: 0;
+  }
+  button:hover,.menu,nav {
+      color: red;
+  }
+  body {
+    background-color: var(--darkBG);
+    color: var(--text);
+    border: none;
+    border-radius: 0;
+  }
+  
+  button {
+    color: var(--titles);
+  }
+  
+  #title-container {
+    background: none;
+  }
+  
+  #note-title {
+    background-color: var(--darkBG);
+    color: var(--text);
+  }
+  
+  #left-pane {
+    background-color: var(--medBG);
+    border: none;
+    color: #bbbbbb;
+  }
+  
+  #header {
+    background-color: var(--darkBG);
+    border-bottom: 1px solid var(--accent);
+  }
+  
+  #header button,
+  #history-navigation,
+  #global-buttons {
+    color: #bbbbbb;
+    border: none;
+    background: none;
+    border-radius: 0;
+  }
+  
+  #context-menu-container,
+  .dropdown-item {
+    background-color: var(--medBG);
+    color: #ccc;
+  }
+  
+  #note-detail-wrapper {
+    background-color: var(--darkBG);
+    color: var(--lightBG);
+  }
+  
+  #container:not(.distraction-free-mode) #note-detail-wrapper.protected {
+    opacity: 0.4;
+  }
+  
+  #search-box {
+    background-color: var(--lightBG);
+  }
+  
+  #tree {
+    border: none;
+  }
+  
+  #tree span {
+    color: var(--text);
+    background-color: var(--medBG);
+  }
+  
+  #tree span:hover {
+    background-color: var(--highlightbg);
+  }
+  
+  .fancytree-node:not(.fancytree-folder) .fancytree-expander:before {
+    color: var(--highlightbg);
+  }
+  
+  #search-results {
+    border-bottom: 2px solid #3f3f46;
+  }
+  
+  span.fancytree-custom-icon {
+    color: var(--accent) !important;
+    background: none;
+  }
+  
+  .dropdown-menu a:hover:not(.disabled) {
+    background-color: #3f3f46 !important;
+    color: var(--text);
+  }
+  #note-id-display,
+  .dropdown-item.disabled,
+  .dropdown-item.disabled kbd {
+    color: var(--inactive) !important;
+    background: none;
+  }
+  
+  .cm-matchhighlight {
+    background-color: var(--lightBG);
+  }
+  
+  #label-list,
+  #relation-list,
+  #attribute-list {
+    color: var(--text);
+    background-color: var(--medBG);
+    border-top: 1px solid #3f3f46;
+    overflow: hidden;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    margin-left: -1rem;
+  }
+  
+  #label-list button,
+  #relation-list button,
+  #attribute-list button {
+    background: none;
+    border: none;
+    color: #777;
+    border-radius: 0;
+  }
+  
+  #children-overview {
+    background: none;
+    padding: 1rem;
+  }
+  
+  .child-overview {
+    background-color: var(--medBG);
+    color: var(--text);
+    border-radius: 0;
+    margin: 1rem auto;
+  }
+  
+  .btn:not(.btn-primary):not(.btn-danger) {
+    border-radius: 0;
+    border: none;
+    background-color: var(--lightBG);
+    background: none;
+    color: var(--text);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--medBG);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--lightBG);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #414040;
+  }
+  
+  .CodeMirror-gutters {
+    background: none;
+    border: none;
+  }
+  
+  .CodeMirror-cursor {
+    border-left: 1px solid #e0e9ed;
+  }
+  
+  .cm-s-default .cm-variable,
+  .cm-s-default .cm-punctuation,
+  .cm-s-default .cm-property,
+  .cm-s-default .cm-operator {
+    color: #9cdcfe;
+  }
+  
+  .cm-s-default .cm-string {
+    color: #4ec9b0;
+  }
+  
+  #note-detail-text,
+  .dropdown-menu a:not(.disabled),
+  .dropdown-item kbd,
+  .child-overview a {
+    color: var(--text);
+  }
+  
+  #container:not(.distraction-free-mode),
+  ul.fancytree-container,
+  .dropdown-menu {
+    background-color: var(--medBG);
+  }
+  
+  .CodeMirror-activeline-background
+  .cm-s-default .cm-bracket,
+  .fancytree-loading span.fancytree-expander,
+  .fancytree-loading span.fancytree-expander:after,
+  #note-detail-component,
+  .fancytree-loading span.fancytree-expander:after,
+  div.ui-tooltip,
+  .CodeMirror-selected span,
+  .CodeMirror-guttermarker-subtle,
+  div.CodeMirror span.CodeMirror-nonmatchingbracket,
+  span.cm-comment.cm-def,
+  span.cm-comment.cm-tag {
+  color: red
+  }
+  
+  .CodeMirror,
+  div.CodeMirror span.CodeMirror-matchingbracket {
+    color: yellow;
+  }
+  
+  .CodeMirror-linenumber,
+  .cm-s-default .cm-comment {
+    color: var(--inactive);
+  }
+  
+  .cm-s-default .cm-keyword,
+  .cm-s-default .cm-variable-3,
+  .cm-s-default .cm-type,
+  .cm-s-default .cm-qualifier,
+  .cm-s-default .cm-meta,
+  .cm-s-default .cm-builtin,
+  .cm-s-default .cm-tag {
+    color: #ce9174;
+  }
+  
+  .cm-s-default .cm-number,
+  .cm-s-default .cm-atom {
+    color: #b2e287;
+  }
+  
+  .CodeMirror-focused .CodeMirror-selected,
+  .CodeMirror-line::selection,
+  .CodeMirror-line > span::selection,
+  .CodeMirror-line > span > span::selection,
+  .CodeMirror-line::-moz-selection,
+  .CodeMirror-line > span::-moz-selection,
+  .CodeMirror-line > span > span::-moz-selection {
+    background-color: var(--highlightbg);
+  }
+  
