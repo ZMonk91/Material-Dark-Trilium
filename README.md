@@ -1,7 +1,7 @@
 
 
 # MaterialDark for Trilium
-MaterialDark is a custom CSS theme, to be used as an alternative to the few default themes in Trilium. It features a flat, Material like design with a high contrast code editor. The theme is a simple CSS file than can be customized to your liking. It's heavily influenced by Microsoft's Dark+ theme for VSCode. 
+MaterialDark is a custom CSS theme, to be used as an alternative to the few default themes in [Trilium](https://github.com/zadam/trilium). It features a flat, Material like design with a high contrast code editor. The theme is a simple CSS file than can be customized to your liking. It's heavily influenced by Microsoft's Dark+ theme for VSCode. 
 ## Preview
 ![Screenshot](https://i.imgur.com/KvsL9ak.png)
 ___
