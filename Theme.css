@@ -15,15 +15,12 @@
 }
 input:active,
 input:focus,
-div:focus {
+div:focus,
+inp {
   border-color: var(--accent) !important;
   border-radius: 0;
 }
-button:hover,
-.menu,
-nav {
-  color: red;
-}
+
 body {
   background-color: var(--darkBG);
 }
@@ -37,8 +34,11 @@ button {
 }
 
 #note-title {
-  background-color: var(--darkBG);
+  background-color: var(--lightBG);
   color: var(--text);
+
+  padding-left: 1rem;
+  margin-right: 1rem;
 }
 
 #left-pane {
@@ -266,4 +266,43 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 .CodeMirror-line > span::-moz-selection,
 .CodeMirror-line > span > span::-moz-selection {
   background-color: var(--highlightbg);
+}
+
+.modal-content {
+  background: var(--medBG);
+}
+.nav-item a {
+  background: var(--darkBG);
+  color: var(--text);
+  border: none;
+  border-radius: 0;
+}
+.nav-item a.active {
+  background: var(--lightBG) !important;
+  color: var(--text) !important;
+  border-color: var(--accent) !important;
+}
+.form-control {
+  background: var(--darkBG) !important;
+  color: var(--text);
+  border-color: var(--accent);
+  border-radius: 0;
+}
+#search-box {
+  background-color: var(--lightBG) !important;
+  transition: 0.3s;
+}
+#search-box div input {
+  background-color: var(--medBG) !important;
+  border: 1px solid var(--accent) !important;
+}
+#search-box div input:target {
+  background-color: var(--medBG) !important;
+  border-color: var(--accent) !important;
+  border: none;
+}
+#global-buttons a:hover,
+button:hover,
+#note-title:hover {
+  color: white !important;
 }
